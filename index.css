@@ -1,0 +1,24 @@
+#MesProduits {
+    display: flex;
+}
+
+.produit {
+    margin: 5%;
+    padding: 5px 50px;
+    border: 2px solid red;
+    /* background-color: yellowgreen; */
+
+}
+
+.produit p {
+    font-family: 'Calibri';
+    font-weight: bold;
+    color: red;
+}
+
+.interactLine {
+    display: flex;
+    padding: auto;
+    margin: auto;
+    
+}
