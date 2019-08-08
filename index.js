@@ -23,14 +23,12 @@ let produits = [
 ];
 
 
-
-
 // console.log(produits);
 
 var myProducts = document.getElementById('MesProduits')
 
 
-produits.forEach(element => {
+produits.forEach((element) => {
 
     /* (let i = 0; i < produits.length; i++) */
 
@@ -66,15 +64,18 @@ produits.forEach(element => {
     newTitle.innerHTML = productName;
     newPrice.innerHTML = productPrice + '€';
     newBuyButton.innerHTML = "Acheter";
-    document.addEventListener('click', addToBasket)
+    // document.addEventListener('click', addToBasket)
 
 });
 
-function addToBasket(event) {
+var buyB = document.getElementsByClassName("buyButton")
 
-    if (event.target.matches('buyButton')) {
+for (let i = 0; i < products.length; i++) {
+
+    buyButton[i].addEventListener("click", function () {
         alert(event.target.productName + ' ajouté au panier')
-    }
+    })
+
 
 };
 
